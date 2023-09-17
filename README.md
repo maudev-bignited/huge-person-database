@@ -4,6 +4,7 @@ This application contains a database of people. It is a simple application that 
 The application contains some bugs that you need to find, and eventually fix.
 
 ## Installation
+
 - You will need Java SDK 17, which you can download here: https://www.oracle.com/java/technologies/downloads/#java17
 - You need to enable Lombok annotation processing in your IDE. See here for instructions: https://www.baeldung.com/lombok-ide
 
@@ -18,3 +19,12 @@ You can interact with the application using the Swagger UI. You can access the S
 
 The application uses an in-memory H2 database. The database is initialized with some data when the application starts.
 The database is also reachable at http://localhost:8080/h2-console. The JDBC URL is `jdbc:h2:mem:peopledb`. The username is `sa` and the password is empty.
+
+## Logging bugs
+
+You can log bugs in the issues section of the repository on github. Please use the following template:
+
+1. a quick summary that describes the issue
+2. a step by step instructional list of how to reproduce the issue
+3. the wrong outcome that the issue results in
+4. the expected correct outcome
