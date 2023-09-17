@@ -1,6 +1,7 @@
 # Huge People Database
 
-This application contains a database of people. It is a simple application that allows you to add, edit, and delete people from the database.
+This application contains a database of people. It is a simple application that allows you to add and delete people from the database.
+It also contains some extra functions, e.g. to calculate the average age of all people in the database.
 The application contains some bugs that you need to find, and eventually fix.
 
 ## Installation
@@ -22,9 +23,10 @@ The database is also reachable at http://localhost:8080/h2-console. The JDBC URL
 
 ## Logging bugs
 
-You can log bugs in the issues section of the repository on github. Please use the following template:
+You can log bugs in the issues section of the repository on GitHub. Please use the following template.
+Also make sure not to log a bug that someone else has already logged!
 
 1. a quick summary that describes the issue
-2. a step by step instructional list of how to reproduce the issue
+2. a step-by-step instructional list of how to reproduce the issue
 3. the wrong outcome that the issue results in
 4. the expected correct outcome
