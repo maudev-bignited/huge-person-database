@@ -93,7 +93,7 @@ public class PersonController {
     }
 
     @GetMapping("/report/birthdays")
-    @Operation(summary = "Generate a report of persons having birthdays in a given month and year")
+    @Operation(summary = "Generate a report of people having birthdays in a given month and year")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Report generated successfully"),
             @ApiResponse(responseCode = "400", description = "Invalid month/year provided")})
