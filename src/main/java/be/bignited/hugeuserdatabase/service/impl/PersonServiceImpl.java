@@ -83,7 +83,7 @@ public class PersonServiceImpl implements PersonService {
         List<Person> allPeople = personRepository.findAll();
 
         allPeople.forEach(person -> {
-            if (person.getName().length() > 10) {
+            if (person.getName().length() > 12) {
                 person.setEmail(null);
             } else {
                 String localPart = person.getEmail().split("@")[0];

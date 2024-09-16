@@ -28,7 +28,7 @@ public class HugeUserDatabaseApplication {
             repository.save(new Person("Frida Kahlo", "frida.kahlo@example.com", LocalDate.of(1982, 4, 30)));
             repository.save(new Person("Helen Keller", "helen.keller@example.com", LocalDate.of(1991, 5, 10)));
             repository.save(new Person("Isaac Newton", "isaac.newton@example.com", LocalDate.of(1993, 3, 20)));
-            repository.save(new Person("Jules Verne", "jules.verne@example.com", LocalDate.of(1992, 6, 25)));
+            repository.save(new Person("Jules Verne", null, LocalDate.of(1992, 6, 25)));
         };
     }
 
