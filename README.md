@@ -6,7 +6,7 @@ The application contains some bugs that you need to find, and eventually fix.
 
 ## Installation
 
-- You will need Java SDK 17, which you can download here: https://www.oracle.com/java/technologies/downloads/#java17
+- You will need Java SDK 21, which you can download here: https://www.oracle.com/java/technologies/downloads/#java21
 - You need to enable Lombok annotation processing in your IDE. See here for instructions: https://www.baeldung.com/lombok-ide
 
 All you need to do is run the HugePeopleDatabaseApplication class.
