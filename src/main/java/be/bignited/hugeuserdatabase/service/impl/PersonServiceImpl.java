@@ -27,12 +27,7 @@ public class PersonServiceImpl implements PersonService {
     public Person findById(Long id) {
         Optional<Person> personOpt = personRepository.findById(id);
         if (personOpt.isPresent()) {
-            Person person = personOpt.get();
-
-            LocalDate dateOfBirth = person.getDateOfBirth().minusDays(1);
-            person.setDateOfBirth(dateOfBirth);
-
-            return person;
+            return personOpt.get();
         }
         return null;
     }
