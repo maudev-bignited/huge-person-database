@@ -86,6 +86,9 @@ public class PersonServiceImpl implements PersonService {
             if (person.getName().length() > 12) {
                 person.setEmail(null);
             } else {
+                if (person.getEmail() == null) {
+                    return;
+                }
                 String localPart = person.getEmail().split("@")[0];
                 person.setEmail(localPart + "@" + newDomain);
             }
