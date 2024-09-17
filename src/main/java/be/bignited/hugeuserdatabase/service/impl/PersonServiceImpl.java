@@ -47,18 +47,13 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public void deleteById(Long id) {
-        Optional<Person> person = personRepository.findById(id);
+        Person person = personRepository
+                .findById(id)
+                .orElseThrow(PersonNotFoundException::new);
 
-        if (person.isPresent()) {
-            String name = person.get().getName();
-            String obfuscatedName = new StringBuilder(name).reverse().toString();
-            System.out.println("Deleting entity with obfuscated name: " + obfuscatedName);
-        }
-
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-        }
+        String name = person.getName();
+        String obfuscatedName = new StringBuilder(name).reverse().toString();
+        System.out.println("Deleting entity with obfuscated name: " + obfuscatedName);
     }
 
     @Override
